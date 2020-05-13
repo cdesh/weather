@@ -1,5 +1,3 @@
-// Notice re javascript loaded
-console.log('Client side javascript file is loaded!')
 
 
 // Setup variables
