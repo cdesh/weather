@@ -10,6 +10,7 @@ const hbs = require('hbs')
 const partialsPath = path.join(__dirname, '../templates/partials')
 const geocode = require('/Users/charlesdeshazer/Dropbox/Programming/Javascript/Node.js/web-server/utils/geocode.js')
 const forecast = require('/Users/charlesdeshazer/Dropbox/Programming/Javascript/Node.js/web-server/utils/forecast.js')
+const port = process.env.PORT || 3000
 // const chalk = require('chalk')
 
 //Set up handlebars engine, views location and directory for express to use
@@ -95,8 +96,8 @@ app.get('*', (req, res) => {
 })
 
 //starts server and listens on the port
-app.listen(3000, ( )=> {
-    console.log('Server is up on port 3000.')
+app.listen(port, ( )=> {
+    console.log('Server is up on port' + port)
 }) 
 
 
