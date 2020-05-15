@@ -8,8 +8,8 @@ const pubdir = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const hbs = require('hbs')
 const partialsPath = path.join(__dirname, '../templates/partials')
-const geocode = require('/Users/charlesdeshazer/Dropbox/Programming/Javascript/Node.js/web-server/utils/geocode.js')
-const forecast = require('/Users/charlesdeshazer/Dropbox/Programming/Javascript/Node.js/web-server/utils/forecast.js')
+const geocode = require('../web-server/utils/geocode.js')
+const forecast = require('../web-server/utils/forecast.js')
 const port = process.env.PORT || 3000
 // const chalk = require('chalk')
 
